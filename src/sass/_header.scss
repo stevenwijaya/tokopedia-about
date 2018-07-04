@@ -1,0 +1,181 @@
+.top-navigation {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #42b549;
+  padding: 5px 0;
+  height: 50px;
+  &-logo {
+    float: left;
+    margin-top: 9px;
+    a {
+      display: inline-block;
+      height: 25px;
+      width: 115px;
+      background: url('../assets/img-tokopedia-logo.png') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  &-menu {
+    float: right;
+    &-list {
+      list-style-type: none;
+    }
+    &__link {
+      border-radius: 3px;
+      color: #FFF;
+      padding: 6px 12px;
+      margin-top: 4px;
+      display: block;
+      letter-spacing: 1px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: opacity .25s ease;
+      &:hover {
+        color: #FFF;
+        text-decoration: none;
+        opacity: .8;
+      }
+    }
+  }
+  &-pivot {
+    margin-top: 9px;
+    margin-left: 10px;
+    float: right;
+  }
+}
+
+.overlay {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+  z-index: 1002;
+  display: none;
+}
+
+.pivot {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  &-button {
+    position: relative;
+    z-index: 999;
+    display: block;
+    width: 27px;
+    height: 27px;
+    border: 0;
+    outline: 0;
+    top: -2px;
+    left: 1px;
+    background-color: transparent;
+    background-image: url(https://ecs7.tokopedia.net/assets/images/ic_menu.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    background-size: 27px 27px;
+    cursor: pointer;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    @include breakpoint(xs) {
+      display: none;
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &-container {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 250px;
+    top: 36px;
+    right: -20px;
+    &--active {
+      display: block;
+      height: auto;
+    }
+    &:before {
+      top: -22px;
+      right: 21px;
+      border-width: 11px;
+      border-color: transparent transparent #FFFFFF;
+      border-style: solid;
+      position: absolute;
+      display: block;
+      content: '';
+    }
+  }
+  &-item {
+    margin-bottom: 3px;
+    width: 104px;
+    height: 104px;
+    display: block;
+    float: left;
+    text-align: center;
+    &__link {
+      text-decoration: none;
+    }
+    &:hover {
+      box-shadow: 0 0 5px 2px rgba(204, 204, 204, .48)
+    }
+  }
+  &-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: 37px;
+    background-repeat: no-repeat;
+    &__wrapper {
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 15px 0 0;
+      width: 70px;
+      height: 70px;
+      background: #FFF;
+      transition: background .25s ease;
+    }
+    &__text {
+      display: block;
+      margin: 0;
+      padding: 0 0 20px;
+      color: #787878;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    &-pulsa {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-pulsa@2x.png);
+      background-size: 45px;
+    }
+    &-tiket {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-tiket@2x.png);
+      background-size: 30px;
+    }
+    &-toped {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-toped@2x.png);
+    }
+    &-official {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-official-store@2x.png);
+      background-size: 45px;
+    }
+    &-help {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-bantuan@2x.png);
+      background-size: 38px;
+    }
+    &-donasi {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-donasi@2x.png);
+      background-size: 45px;
+    }
+  }
+}
