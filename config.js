@@ -41,6 +41,36 @@ const config = {
       filename: 'example/cards.html',
       chunks: ['main'],
     },
+    {
+      template: './src/about/index.html',
+      filename: 'about/index.html',
+      chunks: ['main'],
+    },
+    {
+      template: './src/about/career.html',
+      filename: 'about/career.html',
+      chunks: ['main'],
+    },
+    {
+      template: './src/about/contact-us.html',
+      filename: 'about/contact-us.html',
+      chunks: ['main'],
+    },
+    {
+      template: './src/about/event.html',
+      filename: 'about/event.html',
+      chunks: ['main'],
+    },
+    {
+      template: './src/about/merchant.html',
+      filename: 'about/merchant.html',
+      chunks: ['main'],
+    },
+    {
+      template: './src/about/product.html',
+      filename: 'about/product.html',
+      chunks: ['main'],
+    },
   ],
   cdn: {
     upload: false,
