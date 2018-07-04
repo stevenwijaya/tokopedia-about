@@ -7,6 +7,7 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   color: rgba(0,0,0, .7);
+  margin-top: 24px;
   .yellow {
     color: #ffce3a;
   }
@@ -35,6 +36,7 @@ p {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.38);
   font-weight: 600;
+  margin-top: 16px;
 }
 
 button.btn {
@@ -52,6 +54,7 @@ button.btn {
   display: inline-block;
   border: 0;
   outline: none;
+  margin-top: 24px;
   &--full {
     width: 100%;
   }
