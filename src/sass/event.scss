@@ -1,0 +1,152 @@
+@import "slick";
+
+body {
+  overflow: auto;
+}
+
+a {
+  color: #42b549;
+  text-decoration: none;
+}
+hr {
+  border-color: #e0e0e0;
+  border-top: none;
+  display: inline-block;
+  width: 100%;
+}
+.row-gap {
+  $mtop: 24px;
+  margin-top: $mtop;
+  &-2x {
+    margin-top: ($mtop * 2);
+  }
+ 
+}
+.dot-yellow {
+  color: #ffce3a;
+}
+.main-banner {
+  img {
+    width: 100%;
+  }
+}
+.text{
+  &-center{
+    text-align: center;
+  }
+}
+
+.press {
+
+  &-release {
+    &__wrapper {
+      padding-right: 20px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 8px;
+    }
+    &__content {
+      border-radius: 4px;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+
+      &-link {
+        text-align: right;
+        padding: 4px 0;
+        font-size: 12px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+     
+    }
+
+    &__desc {
+      padding: 10px;
+    }
+  }
+}
+
+.event {
+  &__wrapper {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+
+    img {
+      width: 100%;
+    }
+  }
+  &__date {
+    width: 25%;
+    max-width:80px;
+    float: left;
+    // display:inline-block;
+    overflow: hidden;
+    padding-right: 16px;
+    &-date {
+      font-size: 27px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.54);
+      text-align: center;
+     
+    }
+    &-month-year {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.38);
+      text-align: center;
+      line-height: 1.7;
+    }
+  }
+  &__day-clock {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.38);
+  }
+  &__detail {
+    width: 75%;
+    float: left;
+    overflow: hidden;
+    h3 {
+      margin-top: 4px;
+    }
+    // display:inline-block;
+  }
+  &__content {
+    padding: 16px;
+
+    // font-size:0;
+  }
+}
+
+.news{
+  padding-bottom: 48px;
+
+  &-container {
+    
+  }
+
+  &__wrapper {
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+  }
+  &__content {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+
+    &-link {
+      text-align: right;
+      padding: 4px 0;
+      font-size: 12px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__desc {
+    padding: 10px;
+  }
+}

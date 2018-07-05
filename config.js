@@ -8,6 +8,23 @@ const config = {
     unify: [
       './src/js/unify.js',
     ],
+    slick: [
+      // './src/js/slick.min.js',
+      // './src/sass/_slick.scss',
+    ],
+    merchant: [
+      './src/sass/merchant.scss',
+      './src/js/merchant.js',
+    ],
+    event: [
+      './src/sass/event.scss',
+      './src/js/event.js',
+    ],
+    career:[
+      './src/sass/career.scss',
+      './src/js/career.js',
+    ],
+
   },
   jquery: true,
   html: [
@@ -49,7 +66,7 @@ const config = {
     {
       template: './src/about/career.html',
       filename: 'about/career.html',
-      chunks: ['main'],
+      chunks: ['main', 'career'],
     },
     {
       template: './src/about/contact-us.html',
@@ -59,12 +76,12 @@ const config = {
     {
       template: './src/about/event.html',
       filename: 'about/event.html',
-      chunks: ['main'],
+      chunks: ['main', 'event'],
     },
     {
       template: './src/about/merchant.html',
       filename: 'about/merchant.html',
-      chunks: ['main'],
+      chunks: ['main', 'merchant'],
     },
     {
       template: './src/about/product.html',

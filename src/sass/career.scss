@@ -1,0 +1,49 @@
+// @import "slick";
+
+body {
+  overflow: auto;
+}
+
+a {
+  color: #42b549;
+  text-decoration: none;
+}
+hr {
+  border-color: #e0e0e0;
+  border-top: none;
+  display: inline-block;
+  width: 100%;
+}
+.row-gap {
+  $mtop: 24px;
+  margin-top: $mtop;
+  &-2x {
+    margin-top: ($mtop * 2);
+  }
+}
+.dot-yellow {
+  color: #ffce3a;
+}
+.main-banner {
+  img {
+    width: 100%;
+  }
+}
+
+.career{
+    padding-bottom:48px;
+}
+.video {
+  padding-bottom: 48px;
+  img {
+    width: 100%;
+  }
+  background-color: #cacaca;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+    font-weight: normal;
+  }
+}
